@@ -30,6 +30,7 @@ body {
         border: 1px solid #cecece;
         color: #cecece;
         padding: 10px 15px;
+        margin: 0 8px 16px 8px;
         border-radius: 21px;
         text-decoration: none;
         transition: background-color 0.2s ease-in-out;
@@ -37,10 +38,18 @@ body {
     #header a:hover {
         background-color: #5a4279;
     }
+    #header a:focus, #header a:active {
+        background-color: none;
+    }
     #header a.full {
         border: 1px solid #cecece;
         background-color: #5a4279;
         color: #cecece;
+        
+    }
+    #header a:last-child {
+        margin-right: 0;
+        margin-bottom: 0;
     }
 
 #main {
@@ -64,6 +73,9 @@ body {
         margin-bottom: 20px;
         animation: fadein 2s;
     }
+    #main #poem span:last-child {
+        margin-bottom: 0;
+    }
 
 #footer {
     font-weight: bold;
@@ -82,3 +94,22 @@ body {
     0% { opacity: 0; }
     100%   { opacity: 1; }
 }
+
+
+
+  @media screen and (max-width: 600px) {
+    #container #header {
+        text-align: center;
+        order: 2;
+        padding: 0 16px;
+    }
+    #header a {
+        margin: 0 8px 16px 8px;
+    }
+    #main {
+        order: 1;
+    }
+    #footer {
+        order: 3;
+    }
+  }
