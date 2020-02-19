@@ -78,7 +78,7 @@ APP.AddFragments = function(fragments) {
 
 /// Gets poems from Google Spreadsheet.
 APP.GetPoems = function() {
-    return fetch('https://sheets.googleapis.com/v4/spreadsheets/1QbTVndIZn95DymZKldJjtOGkEJn3ab6KQdkUSX1GWZY/values/A1:D100?key=AIzaSyCkFFeHiQNkm_KNzV3WP7uNxWFZlzpAPQ4')
+    return fetch('https://sheets.googleapis.com/v4/spreadsheets/1QbTVndIZn95DymZKldJjtOGkEJn3ab6KQdkUSX1GWZY/values/A1:D100?key=AIzaSyAROUHOYJS_06C6J6b2rjoxJszMTXgeRho')
     .then(data => { 
         if(data.ok) {
             return data.json();
