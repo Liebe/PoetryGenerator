@@ -25,6 +25,12 @@ body {
 #header {
     text-align: right;
 }
+    #header h1 {
+        display:inline-block;
+        font-size: 20px;
+        margin-right: 16px;
+        color: #cecece;
+    }
     #header a {
         display: inline-block;
         border: 1px solid #cecece;
@@ -39,7 +45,7 @@ body {
         background-color: #5a4279;
     }
     #header a:focus, #header a:active {
-        background-color: none;
+        background-color: transparent;
     }
     #header a.full {
         border: 1px solid #cecece;
@@ -103,13 +109,18 @@ body {
         order: 2;
         padding: 0 16px;
     }
-    #header a {
+    #header h1 {
+        display: block;
+        margin:  0 0 16px 0;
+    }
+    #header a, #header a:last-child {
         margin: 0 8px 16px 8px;
     }
     #main {
         order: 1;
     }
-    #footer {
+    #container #footer {
         order: 3;
+        padding-top: 0;
     }
   }
